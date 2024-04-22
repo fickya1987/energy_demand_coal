@@ -5,7 +5,7 @@ from sklearn.linear_model import LinearRegression, LogisticRegression
 from sklearn.model_selection import train_test_split
 
 # Load the dataset
-df = pd.read_csv('EW.csv')
+df = pd.read_csv('EW01.csv')
 
 # Energy Demand Prediction
 # Select the independent variables and the target variable
