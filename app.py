@@ -49,14 +49,14 @@ weather_model = LogisticRegression()
 weather_model.fit(X_weather_train, y_weather_train)
 
 # Set the app title
-st.title("Energy Demand & Prize Prediction")
+st.title("Energy Demand & Price Prediction")
 
 # sidebar for navigation
 with st.sidebar:
     selected = option_menu('Oil & Gas Industry Prediction System',
 
                            ['Energy Demand',
-                            'Energy Prize',
+                            'Energy Price',
                             'Weather'],
                            icons=['bolt','dollar','cloud'],
                            default_index=0)
@@ -81,7 +81,7 @@ if selected == "Energy Demand":
         # Display the predicted energy demand inside a box
         st.success(f"Predicted total load forecast (Energy Demand): {int(demand_prediction[0])}")
 
-elif selected == "Energy Prize":
+elif selected == "Energy Price":
     st.header("Energy Price Prediction")
 
     # Get user input for the independent variables using text boxes
