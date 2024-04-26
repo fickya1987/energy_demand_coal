@@ -53,7 +53,7 @@ st.title("Energy Demand & Price Prediction")
 
 # sidebar for navigation
 with st.sidebar:
-    selected = option_menu('Oil & Gas Industry Prediction System',
+    selected = option_menu('Energy Industry Prediction System',
 
                            ['Energy Demand',
                             'Energy Price',
